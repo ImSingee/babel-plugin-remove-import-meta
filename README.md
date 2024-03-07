@@ -1,6 +1,6 @@
-# babel-plugin-transform-import-meta
+# babel-plugin-remove-import-meta
 
-Transforms import.meta for nodejs environments. This plugin replaces any occurrence of `import.meta.url`.
+Remove import.meta for nodejs environments. This plugin replaces any occurrence of `import.meta.url`.
 
 ```js
 console.log(import.meta.url);
@@ -9,7 +9,7 @@ console.log(import.meta.url);
 With this
 
 ```js
-console.log(require('url').pathToFileURL(__filename).toString());
+console.log("");
 ```
 
 ## Installation
@@ -17,7 +17,7 @@ console.log(require('url').pathToFileURL(__filename).toString());
 Install this package
 
 ```javascript
-npm install --save-dev babel-plugin-transform-import-meta
+npm install --save-dev babel-plugin-remove-import-meta
 ```
 
 And configure it
@@ -25,25 +25,11 @@ And configure it
 ```json
 {
   "plugins": [
-    "babel-plugin-transform-import-meta"
-  ]
-}
-```
-
-# Settings
-
-## ES6 modules
-
-It's possible to use ES6 modules for the output. Useful to delegate module transformation to other plugins.
-
-```json
-{
-  "plugins": [
-    ["babel-plugin-transform-import-meta", { "module": "ES6" }]
+    "babel-plugin-remove-import-meta"
   ]
 }
 ```
 
 ## Credits
 
-Based on a previous project "babel-plugin-import-meta" by The Polymer Authors
+Based on [javiertury/babel-plugin-transform-import-meta](https://github.com/javiertury/babel-plugin-transform-import-meta)

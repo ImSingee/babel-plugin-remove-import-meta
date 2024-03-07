@@ -1,13 +1,13 @@
 {
-  "name": "babel-plugin-transform-import-meta",
-  "version": "2.2.1",
-  "description": "Transforms import.meta for nodejs environments",
+  "name": "babel-plugin-remove-import-meta",
+  "version": "1.0.0",
+  "description": "Remove import.meta for nodejs environments",
   "repository": {
     "type": "git",
-    "url": "https://github.com/javiertury/babel-plugin-transform-import-meta"
+    "url": "https://github.com/ImSingee/babel-plugin-remove-import-meta"
   },
   "license": "BSD",
-  "author": "Javier Garcia <javiertury@gmail.com>",
+  "author": "Bryan <git@singee.me>",
   "keywords": [
     "babel-plugin",
     "import-meta"
